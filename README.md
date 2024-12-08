@@ -15,8 +15,8 @@ The game includes an intuitive GUI for player interaction, automated behaviors b
    - Health decreases if certain conditions are met (e.g., high hunger, low hygiene, etc.).
    - Health regenerates by immunity over time.
 3. **Behavioral Settings**:
-   - Happy Setting: Pet socializes automatically every 1 seconds.
-   - Sad Setting: Pet sleeps automatically every 1 seconds.
+   - Happy Setting: Pet socializes automatically every 1 second.
+   - Sad Setting: Pet sleeps automatically every 1 second.
 4. **User Actions**:
    - Feed: Resets hunger to 0.
    - Shower: Resets hygiene to 100.
@@ -53,15 +53,21 @@ To play the Virtual Pet Game:
    - The GUI will open, showing the pet's stats and action buttons.
 2. **Perform Actions**:
    - Use the buttons to interact with the pet:
-     - `Feed`: Reduces hunger.
-     - `Clean`: Increases hygiene.
-     - `Socialize`: Increases social.
-     - `Sleep`: Puts the pet to sleep for 3 seconds, resetting sleep stats.
+     - `Feed`: Set hunger to 0.
+     - `Clean`: Set hygiene to 100.
+     - `Socialize`: Set social to 100.
+     - `Sleep`: Puts the pet to sleep for 3 seconds, set sleep stats to 100.
 3. **Monitor Stats**:
    - Observe how stats decay over time and make timely decisions to keep the pet healthy.
+   - Watch the pet's mood change based on its stats.
+   - Track the survival time to see how long the pet has been alive.
+   - Keep the pet's health above 0 to continue playing.
+   - The rule of health change is as follows:
+     - Health minus 1 by every second every 1 of the following 4 met:hunger > 50, hygiene < 50, social < 50, sleep < 50.
+     - Health regenerates by 1 every second by immunity.
 4. **Automatic Behaviors**:
-   - When health is above 50, the pet socializes automatically every 1 second.
-   - When health is below 50, the pet sleeps automatically every 1 second.
+   - When health is >= 50, happy setting, the pet socializes automatically every 1 second.
+   - When health is < 50, sad setting, the pet sleeps automatically every 1 second.
 5. **End the Game**:
    - The game ends when the pet's health reaches 0.
    - A "Game Over" message will display the survival time.
