@@ -96,15 +96,13 @@ To play the Virtual Pet Game:
 ---
 
 ## Limitations
-1. **Limited Actions During Sleep**:
-   - Players cannot perform actions while the pet is sleeping, which might reduce interactivity.
-2. **Single Pet Model**:
+1. **Single Pet Model**:
    - The game currently supports only one pet.
-3. **Basic GUI**:
+2. **Basic GUI**:
    - While functional, the GUI is not highly stylized or visually engaging.
-4. **Fixed Decay Rates**:
+3. **Fixed Decay Rates**:
    - The decay rates for stats are fixed and cannot be customized.
-5. **Survival Time Tracker Inaccuracy**:
+4. **Survival Time Tracker Inaccuracy**:
    - The survival time at the start sometimes may be off by 1 second, earlier or late than expected.
 
 ---
